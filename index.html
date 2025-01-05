@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Task List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div id="main" class="card">
+                    <div class="card-content">
+                        <h4>لیست وظایف</h4>
+                        <div class="row">
+                            <form id="task-form">
+                                <div class="input-field col s12">
+                                    <label id="label" for="task">وظیفه جدید</label>
+                                    <input type="text" name="task" id="task">
+                                </div>
+                                <input type="submit" value="افزودن وظیفه جدید" class="btn">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <h5>وظایف</h5>
+                        <div class="input-field col s12">
+                            <label for="filter">فیلتر کردن وظایف</label>
+                            <input type="text" name="filter" id="filter">
+                        </div>
+                        <ul id="ul" class="collection ul">
+                            <!-- <li class="collection-item">
+                                <div class="contentLi">
+                                    <h6 class="titleTask">task2</h6>
+                                    <a href="#" class="secondary-content">
+                                        <i class="Tiny material-icons">delete</i>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="collection-item">
+                                <div class="contentLi">
+                                    <h6 class="titleTask">task3</h6>
+                                    <a href="#" class="secondary-content">
+                                        <i class="Tiny material-icons">delete</i>
+                                    </a>
+                                </div>
+                            </li> -->
+                        </ul>
+                        <a href="#" class="clear-tasks btn black">پاک کردن وظایف</a>
+                    </div>
+                    <div id="box_modal" class="row">
+                        <div class="col s12">
+                            <div class="card grey lighten-4">
+                                <div class="card-content black-text">
+                                  <p id="text_modal" class="">آیا از حذف مطمئن هستید؟</p>
+                                  <div class=" ">
+                                      <a href="#" id="no" class="btn-small">cancel</a> 
+                                      <a href="#" id="ok" class="btn-small">delete task</a> 
+                                </div>
+                                </div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>

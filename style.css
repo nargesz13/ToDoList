@@ -1,0 +1,39 @@
+body{
+    direction: rtl;
+}
+.container{
+    margin-top: 50px;
+}
+label{
+    right:0;
+}
+.delete-item{
+    float: left;
+}
+.contentLi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titleTask{
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+}
+.ul{
+    padding-right: 0 !important;
+}
+.card-action{
+    /* position: relative; */
+}
+#box_modal{
+    position: fixed;
+    top: 60%;
+    left: 40%; 
+     z-index: 2;
+     display: none;
+}
+#text_modal{
+    text-align: center;
+    padding-bottom: 1rem;
+}
